@@ -1,0 +1,4 @@
+nkn_blog:
+    resource: "@NKNBlogBundle/Resources/config/routing.yml"
+    prefix:   /
+
