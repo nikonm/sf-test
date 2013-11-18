@@ -17,20 +17,7 @@ class IndexController extends MainController
     {
         return
             ['content' => 'Some fucking content!!!!',
-             'menu_array' => [[
-                 'name'=>'b2la',
-                 'href'=>'#',
-                 'active'=>0
-             ],[
-                 'name'=>'fasf',
-                 'href'=>'#',
-                 'active'=>1
-             ],
-                 [
-                     'name'=>'gdshsh',
-                     'href'=>'#',
-                     'active'=>false
-                 ],]
+
             ];
     }
 

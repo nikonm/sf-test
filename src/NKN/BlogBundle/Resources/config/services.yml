@@ -5,8 +5,12 @@ services:
 #    nkn_blog.example:
 #        class: %nkn_blog.example.class%
 #        arguments: [@service_id, "plain_value", %parameter%]
-     nkn.demo.listener:
+     nkn_blog.annotation_reader:
+         class: "NKN\BlogBundle\Helpers\AnnotationReader"
+         arguments: [@annotation_reader]
+
+     nkn_blog.listener:
          class: "NKN\BlogBundle\EventListener\ControllerListener"
-         arguments: [""]
+         arguments: [@nkn_blog.annotation_reader]
          tags:
               - {name: kernel.event_subscriber}
