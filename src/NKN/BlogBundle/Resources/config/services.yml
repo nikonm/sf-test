@@ -5,3 +5,8 @@ services:
 #    nkn_blog.example:
 #        class: %nkn_blog.example.class%
 #        arguments: [@service_id, "plain_value", %parameter%]
+     nkn.demo.listener:
+         class: "NKN\BlogBundle\EventListener\ControllerListener"
+         arguments: [""]
+         tags:
+              - {name: kernel.event_subscriber}

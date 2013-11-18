@@ -1,8 +1,5 @@
-{% extends "TwitterBootstrapBundle::layout.html.twig" %}
-{#{% extends "::base.html.twig" %}#}
-
-{% block title %}NKNBlogBundle:Index:index{% endblock %}
-
+{% extends "NKNBlogBundle::layout.html.twig" %}
 {% block body %}
-<h1>Welcome to the Index:index page</h1>
+    {{ menu.menu(menu_array) }}
+    {% block title %}NKNBlogBundle:Index:index{% endblock %}
 {% endblock %}
